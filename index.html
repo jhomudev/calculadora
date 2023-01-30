@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>Calculator App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="clc">
+        <div class="clc__screen">
+          <input type="text" id="screenInput">
+        </div>
+        <div class="clc__buttons" id="keys">
+          <div class="clc__btns">
+            <button style="--bgC:#ee6060;" data-operation="clear">AC</button>
+            <button style="--bgC:white;" data-operation="()">()</button>
+            <button style="--bgC:white;" data-operation="%">%</button>
+          </div>
+          <div class="clc__nums">
+            <button style="--bgC:#f3f6f7;" data-number="9">9</button>
+            <button style="--bgC:#f3f6f7;" data-number="8">8</button>
+            <button style="--bgC:#f3f6f7;" data-number="7">7</button>
+            <button style="--bgC:#f3f6f7;" data-number="6">6</button>
+            <button style="--bgC:#f3f6f7;" data-number="5">5</button>
+            <button style="--bgC:#f3f6f7;" data-number="4">4</button>
+            <button style="--bgC:#f3f6f7;" data-number="3">3</button>
+            <button style="--bgC:#f3f6f7;" data-number="2">2</button>
+            <button style="--bgC:#f3f6f7;" data-number="1">1</button>
+            <button style="--bgC:#f3f6f7;" data-operation="deleteChar"><i class="ph-backspace"></i></button> 
+            <button style="--bgC:#f3f6f7;" data-number=".">●</button> 
+            <button style="--bgC:#f3f6f7;" data-number="0">0</button> 
+          </div>
+          <div class="clc__operations">
+            <button style="--bgC:#20b1aa;" data-math="div">/</button>
+            <button style="--bgC:#fea500;" data-math="mul">*</button>
+            <button style="--bgC:#f0807f;" data-math="dif">-</button>
+            <button style="--bgC:#7c93e1;" data-math="sum">+</button>
+            <button style="--bgC:#fff;" data-operation="igual">&equals;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
