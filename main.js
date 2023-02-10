@@ -5,8 +5,6 @@ screenInput.addEventListener("keydown", (event) => {
   return isNumber(event);
 });
 
-screenInput.focus();
-
 let isOpen = false;
 
 keys.addEventListener("click", (e) => {
@@ -33,5 +31,4 @@ keys.addEventListener("click", (e) => {
       }
     }
   }
-  screenInput.focus();
 });
